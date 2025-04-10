@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div{
-            width: 900px; height: 500px;
-            background: radial-gradient(at bottom, blue, indigo);/* 中間下方 */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>CSS背景漸層作業</title>
+  <style>
+    .container {
+      width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: linear-gradient(to right, #73c8f4, #b9f0f8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .container img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text {
+      flex: 1;
+      text-align: center;
+      padding: 0 15px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #000;
+    }
+    .container img {
+  width: 100px;
+  height: auto; /* 保持原始比例 */
+  border-radius: 10px;
+}
+  </style>
 </head>
 <body>
-    <div>><h1> </h1></div>
+
+  <div class="container">
+    <img src="mczh-tw900x900_large784319.jpg" alt="左邊圖片">
+    <div class="text">
+      今天的作業，應用CSS背景，中間背景顏色使用放射漸層功能，<br>
+      加上2張圖片放在左右。
+    </div>
+    <img src="Morpho_didius_Male_Dos_MHNT.jpg" alt="右邊圖片">
+  </div>
+
 </body>
 </html>
