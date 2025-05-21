@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //建立物件
+        let man=new Object();
+        man.age=18;
+        man.name="小劉";
+        man.talk=function(){
+            //使用this
+            console.log("Hello 我是", this.name,"年齡", this.age);
+
+        };
+        //使用物件
+        document.write("Hello 我是",man.name);
+    </script>
+</body>
+</html>
