@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        p{
+            font-size: 25px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        img{
+            height: 200px;
+            display: block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>購物車總額</button>
+        <button>清空購物車</button>
+
+        <img src="01.jpg">
+        <p>$100</p>
+        <button>加入購物車</button>
+
+        <img src="02.jpg">
+        <p>$120</p>
+        <button>加入購物車</button>
+    </div>
+    <script>
+        let totalPrice =0;
+        function priceAdd (){
+            totalPrice=totalPrice+100;
+            localStorage.setItem("Price",totalPrice);
+            Price=localStorage.getItem("Price");
+            console.log(Price);
+        }
+        function priceAdd2 (){
+            totalPrice=totalPrice+100;
+            localStorage.setItem("Price",totalPrice);
+            Price=localStorage.getItem("Price");
+            console.log(Price);
+        }
+        function updateCart(){
+            localStorage.setItem("Price",totalPrice);
+            Price=localStorage.getItem("Price");
+            document.querySelector("#update").innerHTML=`
+            購物車金額 : ${totalPrice}`
+
+        }
+    </script>
+</body>
+</html>
